@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Мотиваційний компас</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,900 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <p class="short-course-info">Онлайн-трансформаційна гра</p>
+        <h1 class="title">Мотиваційний компас</h1>
+        <p class="desc">
+          <span>Знайдіть свій шлях до успіху:</span> за 90 хвилин ви відкриєте
+          джерела мотивації, подолаєте прокрастинацію та створите план
+          досягнення цілей
+        </p>
+        <ul class="list">
+          <li class="list-item">
+            <p>
+              <span>Перші результати вже під час гри — </span>конкретні інсайти
+              та плани
+            </p>
+          </li>
+          <li class="list-item">
+            <p>
+              <span>Без складних психологічних методик — </span>прості,
+              зрозумілі кроки для дій
+            </p>
+          </li>
+          <li class="list-item">
+            <p>
+              <span>Без технічних складнощів —</span> усе, що потрібно, це
+              комп'ютер і доступ до інтернету
+            </p>
+          </li>
+          <li class="list-item">
+            <p>
+              <span>Почніть без попередньої підготовки —</span> гра доступна для
+              кожного, навіть без особливих знань
+            </p>
+          </li>
+        </ul>
+        <div class="btn-container">
+          <a class="btn" href="">приєднатися ЗІ ЗНИЖКОЮ -83%</a>
+          <div class="timer-container">
+            <p class="timer-text">
+              Зареєструйтеся на гру зараз і зробіть перший крок до мотивації та
+              успіху!
+            </p>
+            <div id="countdown-one" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="milliseconds countdown-time"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="for-whom section">
+        <div class="container">
+          <h2 class="title">Для кого ця гра:</h2>
+          <p class="subtitle">
+            <span>"Мотиваційний компас" —</span> це гра, створена для тих, хто:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/image-01-1x.png 1x,
+                    ./src/img/for-whom/image-01-2x.png 2x
+                  "
+                  width="320"
+                  height="auto" />
+                <img
+                  class="for-whom-image"
+                  src="./src/img/for-whom/image-01-1x.png"
+                  alt="people image"
+                  width="320"
+                  height="auto"
+              /></picture>
+              <div class="text-container">
+                <p class="item-title">Відчуває брак мотивації та енергії</p>
+                <p class="item-text">
+                  Ви часто відкладаєте важливі справи на потім і не знаєте, як
+                  знайти сили рухатися далі? Гра допоможе вам усвідомити, що
+                  саме стримує вас, і дасть чіткі інструменти для подолання
+                  прокрастинації
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/image-02-1x.png 1x,
+                    ./src/img/for-whom/image-02-2x.png 2x
+                  "
+                  width="320"
+                  height="auto" />
+                <img
+                  class="for-whom-image"
+                  src="./src/img/for-whom/image-02-1x.png"
+                  alt="people image"
+                  width="320"
+                  height="auto"
+              /></picture>
+              <div class="text-container">
+                <p class="item-title">
+                  Прагне визначити свої життєві пріоритети
+                </p>
+                <p class="item-text">
+                  Відчуваєте, що занадто багато завдань і планів не дають
+                  зосередитися на головному? У грі ви зможете визначити свої
+                  ключові цілі та розробити систему для їх досягнення
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/image-03-1x.png 1x,
+                    ./src/img/for-whom/image-03-2x.png 2x
+                  "
+                  width="320"
+                  height="auto" />
+                <img
+                  class="for-whom-image"
+                  src="./src/img/for-whom/image-03-1x.png"
+                  alt="people image"
+                  width="320"
+                  height="auto"
+              /></picture>
+              <div class="text-container">
+                <p class="item-title">
+                  Шукає натхнення та новий поштовх у житті чи кар'єрі
+                </p>
+                <p class="item-text">
+                  Якщо ви відчуваєте, що застрягли на місці, і не знаєте, де
+                  знайти нове джерело енергії та ідей, "Мотиваційний компас"
+                  допоможе вам знайти внутрішні драйвери та натхнення для
+                  розвитку
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/image-04-1x.png 1x,
+                    ./src/img/for-whom/image-04-2x.png 2x
+                  "
+                  width="320"
+                  height="auto" />
+                <img
+                  class="for-whom-image"
+                  src="./src/img/for-whom/image-04-1x.png"
+                  alt="people image"
+                  width="320"
+                  height="auto"
+              /></picture>
+              <div class="text-container">
+                <p class="item-title">
+                  Хоче впорядкувати свій час і досягати більше
+                </p>
+                <p class="item-text">
+                  Якщо ви постійно боретеся з нестачею часу або плануванням, ця
+                  гра надасть практичні поради та стратегії для структурованого
+                  досягнення ваших цілей
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/image-05-1x.png 1x,
+                    ./src/img/for-whom/image-05-2x.png 2x
+                  "
+                  width="320"
+                  height="auto" />
+                <img
+                  class="for-whom-image"
+                  src="./src/img/for-whom/image-05-1x.png"
+                  alt="people image"
+                  width="320"
+                  height="auto"
+              /></picture>
+              <div class="text-container">
+                <p class="item-title">
+                  Не готовий до складних курсів і тренінгів, але хоче змін
+                </p>
+                <p class="item-text">
+                  Ви не хочете глибоко занурюватися в складні психологічні
+                  теорії, але шукаєте легкий та ефективний спосіб зрозуміти себе
+                  та почати діяти? "Мотиваційний компас" — це ідеальне рішення
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-auhtor section">
+        <div class="container">
+          <h2 class="title">Про автора:</h2>
+          <picture
+            ><source
+              srcset="
+                ./src/img/author/author-1x.png 1x,
+                ./src/img/author/author-2x.png 2x
+              "
+              width="320"
+              height="320" />
+            <img
+              class="author-image"
+              src="./src/img/author/author-1x.png"
+              alt="author image"
+              width="320"
+              height="320"
+          /></picture>
+          <p class="name">Оксана Мелащук</p>
+          <p class="desc">
+            коуч, бізнес-тренер, НЛП-майстер зі стажем понад 14 років у сфері
+            створення трансформаційних програм і тренінгів
+          </p>
+          <ul class="about-list">
+            <li class="list-item">
+              <ul class="text-list">
+                <li class="text-item">
+                  Автор трансформаційної гри "Ресурс" і понад 18 успішних
+                  авторських тренінгів
+                </li>
+                <li class="text-item">
+                  Працювала з такими провідними компаніями, як Interpipe,
+                  104.UA, Cersanit, АТБ, Varus, e.Да, DCH, Біола та ін.
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <ul class="text-list">
+                <li class="text-item">
+                  <span>Моя місія —</span> допомагати людям змінювати мислення
+                  та підходи до життя, щоб подолати обмеження й досягати
+                  більшого
+                </li>
+                <li class="text-item">
+                  <span>Моя мета —</span> надавати інструменти, які дозволять
+                  кожному реалізувати свій потенціал і створити своє найкраще
+                  життя
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="what-included section">
+        <div class="container">
+          <h2 class="title">З чого складається гра:</h2>
+          <ul class="included-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-included/01-how-going-1x.png 1x,
+                    ./src/img/what-included/01-how-going-2x.png 2x
+                  "
+                  width="32"
+                  height="32" />
+                <img
+                  class="number-image"
+                  src="./src/img/what-included/01-how-going-1x.png"
+                  alt="number image"
+                  width="32"
+                  height="32"
+              /></picture>
+              <p class="item-text">
+                <span>4 етапи мотивації:</span> <br />
+                дослідження особистих драйверів, подолання прокрастинації,
+                систематизація зусиль і підтримка натхнення
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-included/02-how-going-1x.png 1x,
+                    ./src/img/what-included/02-how-going-2x.png 2x
+                  "
+                  width="32"
+                  height="32" />
+                <img
+                  class="number-image"
+                  src="./src/img/what-included/02-how-going-1x.png"
+                  alt="number image"
+                  width="32"
+                  height="32"
+              /></picture>
+              <p class="item-text">
+                <span>Інтерактивні завдання:</span> <br />
+                кожен етап включає рефлексивні питання, метафоричні карти та
+                практичні вправи, які допоможуть вам глибше зрозуміти себе та
+                свої цілі
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-included/03-how-going-1x.png 1x,
+                    ./src/img/what-included/03-how-going-2x.png 2x
+                  "
+                  width="32"
+                  height="32" />
+                <img
+                  class="number-image"
+                  src="./src/img/what-included/03-how-going-1x.png"
+                  alt="number image"
+                  width="32"
+                  height="32"
+              /></picture>
+              <p class="item-text">
+                <span>Групова робота:</span> <br />
+                можливість поділитися досвідом з іншими учасниками, отримати
+                підтримку та нові ідеї
+              </p>
+            </li>
+          </ul>
+          <div class="how-long-wrapper">
+            <p class="long-title">Тривалість гри:</p>
+            <p class="long-text">
+              <span>90 хвилин</span> насиченої практики та рефлексії. Ви зможете
+              не лише отримати нові знання, а й одразу застосувати їх на
+              практиці
+            </p>
+          </div>
+          <div class="how-going">
+            <p class="going-title">Як проходить гра:</p>
+            <ul class="how-going-list">
+              <li class="going-item">
+                <span>Формат:</span> Онлайн через Zoom, тож ви можете
+                приєднатися з будь-якої точки світу
+              </li>
+              <li class="going-item">
+                <span>Інтерактивність:</span> Ми використовуємо віртуальні дошки
+                для роботи з картами, таймери для швидких завдань і групові
+                дискусії для обміну досвідом
+              </li>
+              <li class="going-item">
+                <span>Керівництво ведучого:</span> Професійний коуч проведе вас
+                через всі етапи, допомагаючи зробити відкриття про себе та
+                знайти ефективні рішення для розвитку мотивації
+              </li>
+            </ul>
+          </div>
+          <p class="this-game">
+            Ця гра — ідеальний спосіб швидко отримати нові інсайти та створити
+            план дій для <span>досягнення ваших цілей!</span>
+          </p>
+          <a class="btn" href="">приєднатися ЗІ ЗНИЖКОЮ -83%</a>
+        </div>
+      </section>
+      <section class="how-game-going section">
+        <div class="container">
+          <h2 class="title">Як відбувається гра</h2>
+          <div class="list-container">
+            <ul class="list">
+              <li class="list-item">
+                <span>Після оплати</span> ви потрапляєте в закриту телеграм
+                групу, де ми домовляємся про час гри, який би був зручним для
+                всіх учасників
+              </li>
+              <li class="list-item">
+                <span>Кількість гравців</span> обмежена і може становити від 3-х
+                до 10 людей
+              </li>
+              <li class="list-item">
+                <span>Після визначення часу і дати гри,</span> учасники
+                отримують посилання на Zoom. Програму попередньо треба
+                встановити на комп’ютері
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="after-game section">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Після 90 хвилин</h2>
+            <p class="subtitle">гри ви:</p>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-game/game-01-1x.png 1x,
+                    ./src/img/after-game/game-01-2x.png 2x
+                  "
+                  width="33"
+                  height="33" />
+                <img
+                  class="emoji-image"
+                  src="./src/img/after-game/game-01-1x.png"
+                  alt="emoji image"
+                  width="33"
+                  height="33"
+              /></picture>
+              <p class="item-text">
+                <span>Знайдете свій особистий "компас" мотивації —</span> ви
+                чітко зрозумієте, що вас рухає вперед і як використовувати ці
+                сили кожен день
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-game/game-02-1x.png 1x,
+                    ./src/img/after-game/game-02-2x.png 2x
+                  "
+                  width="33"
+                  height="33" />
+                <img
+                  class="emoji-image"
+                  src="./src/img/after-game/game-02-1x.png"
+                  alt="emoji image"
+                  width="33"
+                  height="33"
+              /></picture>
+              <p class="item-text">
+                <span>Подолаєте бар'єри прокрастинації —</span> більше ніяких
+                відкладених завдань! Ви матимете конкретні стратегії, щоб діяти
+                без зволікань
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-game/game-03-1x.png 1x,
+                    ./src/img/after-game/game-03-2x.png 2x
+                  "
+                  width="33"
+                  height="33" />
+                <img
+                  class="emoji-image"
+                  src="./src/img/after-game/game-03-1x.png"
+                  alt="emoji image"
+                  width="33"
+                  height="33"
+              /></picture>
+              <p class="item-text">
+                <span>Отримаєте чіткий план дій —</span> ви розробите свій
+                індивідуальний покроковий план, який допоможе вам рухатися до
+                ваших цілей впевнено та ефективно
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-game/game-04-1x.png 1x,
+                    ./src/img/after-game/game-04-2x.png 2x
+                  "
+                  width="33"
+                  height="33" />
+                <img
+                  class="emoji-image"
+                  src="./src/img/after-game/game-04-1x.png"
+                  alt="emoji image"
+                  width="33"
+                  height="33"
+              /></picture>
+              <p class="item-text">
+                <span>Збільшите продуктивність —</span> систематизувавши свої
+                зусилля, ви зможете досягати більше за менший час, не втрачаючи
+                фокус
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/after-game/game-05-1x.png 1x,
+                    ./src/img/after-game/game-05-2x.png 2x
+                  "
+                  width="33"
+                  height="33" />
+                <img
+                  class="emoji-image"
+                  src="./src/img/after-game/game-05-1x.png"
+                  alt="emoji image"
+                  width="33"
+                  height="33"
+              /></picture>
+              <p class="item-text">
+                <span>Знайдете джерела натхнення —</span> більше не буде браку
+                мотивації. Ви будете знати, де шукати натхнення навіть у важкі
+                моменти
+              </p>
+            </li>
+          </ul>
+          <div class="buy-container">
+            <div class="buy-box">
+              <div class="buy-star-sell">
+                <img
+                  class="buy-star-image"
+                  src="./src/img/after-game/buy-star.svg"
+                  alt="star"
+                  width="105"
+                  height="105"
+                />
+                <p class="sell-text">знижка <span>-83%</span></p>
+              </div>
+              <p class="buy-text">ВСТИГНИ ПРИЄДНАТИСЯ ПО АКЦІЙНІЙ ЦІНІ</p>
+              <div class="price-container">
+                <div class="line-thought"></div>
+                <p class="price"><span>2999грн</span>&nbsp;499грн</p>
+              </div>
+              <a class="btn" href="">приєднатися</a>
+            </div>
+            <div class="timer-container">
+              <p class="timer-text">до закінчення акції</p>
+              <div id="countdown-two" class="countdown">
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="milliseconds countdown-time"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-wrapper">
+        <section class="reviews section">
+          <div class="container">
+            <div class="reviews-container">
+              <h2 class="reviews-title">відгуки</h2>
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-01-1x.png 1x,
+                          ./src/img/reviews/review-01-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-01-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-02-1x.png 1x,
+                          ./src/img/reviews/review-02-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-02-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-03-1x.png 1x,
+                          ./src/img/reviews/review-03-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-03-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-04-1x.png 1x,
+                          ./src/img/reviews/review-04-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-04-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-05-1x.png 1x,
+                          ./src/img/reviews/review-05-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-05-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-06-1x.png 1x,
+                          ./src/img/reviews/review-06-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-06-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-07-1x.png 1x,
+                          ./src/img/reviews/review-07-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-07-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-08-1x.png 1x,
+                          ./src/img/reviews/review-08-2x.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        width="320"
+                        height="266" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-08-1x.png"
+                        alt="review"
+                        width="320"
+                        height="266"
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="hand-move-container">
+                <img
+                  src="./src/img/hand-move.svg"
+                  width="21"
+                  height="21"
+                  class="hand-move-icon"
+                  alt="hand-move"
+                />
+                <p class="hand-move-text">гортай щоб побачити більше</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions section">
+          <div class="container">
+            <h2 class="questions-title">відповіді</h2>
+            <p class="questions-subtitle">на запитання</p>
+            <div class="questions-container">
+              <ul class="questions-list list">
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Чи підійде мені ця гра, якщо я не вмію працювати з
+                      мотивацією або не маю чітких цілей?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Так, гра розрахована на всіх, незалежно від рівня
+                        підготовки. Вона допоможе вам знайти ваші внутрішні
+                        джерела мотивації та зрозуміти, як ефективно
+                        використовувати їх для досягнення цілей, навіть якщо
+                        зараз у вас немає чіткого плану
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">Скільки часу триває гра?</p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Гра триває 90 хвилин. За цей час ви встигнете пройти всі
+                        етапи: дослідження мотивації, подолання прокрастинації
+                        та створення чіткого плану дій.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Я не люблю великі групи, чи можу я пройти гру
+                      індивідуально?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Так, гра проводиться в невеликих групах, що дозволяє
+                        створити комфортну атмосферу. Але якщо ви хочете більше
+                        індивідуальної уваги, можливе проведення гри один на
+                        один.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Що мені потрібно для участі в грі?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Все, що вам потрібно — це комп'ютер або смартфон із
+                        доступом до інтернету. Ми проведемо гру в зручному
+                        онлайн-форматі, тож ви можете грати з будь-якої точки
+                        світу.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Я не маю багато часу. Чи отримаю я результати після однієї
+                      гри?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Так! Вже після одного заняття ви зможете отримати
+                        інсайти про свою мотивацію, усунути основні бар'єри та
+                        створити план дій, який допоможе вам рухатися вперед
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Чи зможу я застосувати знання з гри у своєму житті?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Абсолютно! У грі ви не тільки отримаєте теоретичні
+                        знання, але й розробите практичний план, який можна буде
+                        відразу застосовувати у своєму щоденному житті.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Що робити, якщо мені не сподобається гра?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        Ми впевнені, що гра принесе вам цінні інсайти, але якщо
+                        з якоїсь причини вона не виправдає ваших очікувань, ми
+                        готові запропонувати вам інші варіанти навчання або
+                        навіть повернення коштів.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer section">
+      <div class="container">
+        <div class="fop-box">
+          <p class="name">фоп</p>
+          <p class="code">іпн</p>
+        </div>
+        <a class="mail-link" href="mailto:"
+          ><div class="mail-box">
+            <img src="./src/img/mail.svg" alt="mail" />
+            <p class="mail">пошта</p>
+          </div></a
+        >
+        <div class="deals-box">
+          <a href="" target="_blank" rel="nofollow" class="deals-link public"
+            >публічна оферта</a
+          >
+          <a
+            href=""
+            target="_blank"
+            rel="nofollow"
+            class="deals-link confidence"
+            >політика конфідеційності</a
+          >
+        </div>
+        <a
+          class="dising-creator"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/insta.svg" alt="insta" height="25" width="25" />
+          <p>
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <script type="module" src="./src/js/timer.js"></script>
+    <script type="module" src="./src/js/swiper.js"></script>
+    <script type="module" src="./src/js/questions.js"></script>
   </body>
 </html>

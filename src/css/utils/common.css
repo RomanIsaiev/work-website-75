@@ -9,6 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 body.is-hidden {
@@ -46,24 +49,12 @@ body::-webkit-scrollbar-track {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  padding: 0 16px;
-
-  @media (360px <= width) {
-    max-width: 360px;
-  }
-
-  @media (768px<=width) {
-    max-width: 768px;
-  }
-
-  @media (1280px<=width) {
-    max-width: 1280px;
-    padding: 0 24px;
-  }
+  padding: 0 20px;
+  max-width: 360px;
 }
