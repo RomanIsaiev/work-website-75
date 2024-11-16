@@ -9,10 +9,10 @@ export default () => {
           interlaced: false,
         },
         optipng: {
-          optimizationLevel: 3,
+          optimizationLevel: 2,
         },
         mozjpeg: {
-          quality: 80,
+          quality: 90,
         },
         pngquant: {
           quality: [0.8, 0.9],

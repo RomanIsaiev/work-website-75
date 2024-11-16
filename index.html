@@ -16,9 +16,9 @@
         <p class="short-course-info">Онлайн-трансформаційна гра</p>
         <h1 class="title">Мотиваційний компас</h1>
         <p class="desc">
-          <span>Знайдіть свій шлях до успіху:</span> за 90 хвилин ви відкриєте
-          джерела мотивації, подолаєте прокрастинацію та створите план
-          досягнення цілей
+          <span>Знайдіть свій шлях до успіху:</span> <br />
+          за 90 хвилин ви відкриєте джерела мотивації, подолаєте прокрастинацію
+          та створите план досягнення цілей
         </p>
         <ul class="list">
           <li class="list-item">
@@ -47,7 +47,7 @@
           </li>
         </ul>
         <div class="btn-container">
-          <a class="btn" href="">приєднатися ЗІ ЗНИЖКОЮ -83%</a>
+          <a class="btn" href="#buy">приєднатися ЗІ ЗНИЖКОЮ -83%</a>
           <div class="timer-container">
             <p class="timer-text">
               Зареєструйтеся на гру зараз і зробіть перший крок до мотивації та
@@ -376,7 +376,7 @@
             Ця гра — ідеальний спосіб швидко отримати нові інсайти та створити
             план дій для <span>досягнення ваших цілей!</span>
           </p>
-          <a class="btn" href="">приєднатися ЗІ ЗНИЖКОЮ -83%</a>
+          <a class="btn" data-scroll href="#buy">приєднатися ЗІ ЗНИЖКОЮ -83%</a>
         </div>
       </section>
       <section class="how-game-going section">
@@ -497,7 +497,7 @@
                 фокус
               </p>
             </li>
-            <li class="list-item">
+            <li class="list-item" id="buy">
               <picture
                 ><source
                   srcset="
@@ -537,7 +537,13 @@
                 <div class="line-thought"></div>
                 <p class="price"><span>2999грн</span>&nbsp;499грн</p>
               </div>
-              <a class="btn" href="">приєднатися</a>
+              <a
+                class="btn"
+                href="https://secure.wayforpay.com/button/b356b554acee1"
+                target="_blank"
+                rel="nofollow"
+                >приєднатися</a
+              >
             </div>
             <div class="timer-container">
               <p class="timer-text">до закінчення акції</p>
@@ -869,21 +875,25 @@
     <footer class="footer section">
       <div class="container">
         <div class="fop-box">
-          <p class="name">фоп</p>
-          <p class="code">іпн</p>
+          <p class="name">ФОП Мелащук Оксана</p>
+          <p class="code">ІПН 3106516969</p>
         </div>
-        <a class="mail-link" href="mailto:"
+        <a class="mail-link" href="mailto:melaschuk.oksana@gmail.com"
           ><div class="mail-box">
             <img src="./src/img/mail.svg" alt="mail" />
             <p class="mail">пошта</p>
           </div></a
         >
         <div class="deals-box">
-          <a href="" target="_blank" rel="nofollow" class="deals-link public"
+          <a
+            href="https://docs.google.com/document/d/1cG5ErmLyN1V_VPG6L1IkJ-LzUlcjV7rhdqBjv5VzRSU/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            class="deals-link public"
             >публічна оферта</a
           >
           <a
-            href=""
+            href="https://docs.google.com/document/d/16PJ9-BiGue7NHrXMgVGbiFXZ-qp_Q5HLYpOqI60wO7c/edit?usp=sharing"
             target="_blank"
             rel="nofollow"
             class="deals-link confidence"
@@ -906,5 +916,13 @@
     <script type="module" src="./src/js/timer.js"></script>
     <script type="module" src="./src/js/swiper.js"></script>
     <script type="module" src="./src/js/questions.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true,
+      });
+    </script>
   </body>
 </html>
